@@ -1,0 +1,61 @@
+erDiagram
+    PATIENTS ||--o{ APPOINTMENTS : "записывается"
+    DOCTORS ||--o{ APPOINTMENTS : "проводит"
+    SPECIALTIES ||--o{ APPOINTMENTS : "выбрана"
+    DOCTORS ||--o{ DOCTOR_SPECIALTIES : "имеет"
+    SPECIALTIES ||--o{ DOCTOR_SPECIALTIES : "включает"
+    DOCTORS ||--o{ DOCTOR_WORK_PERIODS : "работает"
+    DOCTORS ||--o{ DOCTOR_TIME_OFF : "недоступен"
+    APPOINTMENTS ||--o{ APPOINTMENT_STATUS_HISTORY : "меняет статус"
+
+    PATIENTS {
+        bigint patient_id PK
+        text last_name
+        text first_name
+        date birth_date
+        text phone UK
+        text oms_policy_number UK
+    }
+    DOCTORS {
+        bigint doctor_id PK
+        text last_name
+        text first_name
+        text license_number UK
+        text room
+        boolean is_active
+    }
+    SPECIALTIES {
+        bigint specialty_id PK
+        text code UK
+        text name UK
+    }
+    DOCTOR_SPECIALTIES {
+        bigint doctor_id PK, FK
+        bigint specialty_id PK, FK
+        smallint experience_years
+        boolean is_primary
+    }
+    DOCTOR_WORK_PERIODS {
+        bigint work_period_id PK
+        bigint doctor_id FK
+        date work_date
+        time starts_at
+        time ends_at
+        smallint slot_minutes
+    }
+    DOCTOR_TIME_OFF {
+        bigint time_off_id PK
+        bigint doctor_id FK
+        timestamp starts_at
+        timestamp ends_at
+        text reason
+    }
+    APPOINTMENTS {
+        bigint appointment_id PK
+        bigint patient_id FK
+        bigint doctor_id FK
+        bigint specialty_id FK
+        timestamp starts_at
+        timestamp ends_at
+        appointment_status status
+    }

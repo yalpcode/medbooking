@@ -1,0 +1,112 @@
+digraph MedBookingER {
+    graph [
+        rankdir=LR,
+        bgcolor="#ffffff",
+        pad=0.35,
+        nodesep=0.55,
+        ranksep=0.85
+    ];
+    node [
+        shape=plain,
+        fontname="PT Sans"
+    ];
+    edge [
+        color="#375a64",
+        fontname="PT Sans",
+        fontsize=11,
+        arrowsize=0.8,
+        dir=both,
+        arrowtail=tee,
+        arrowhead=crowodot,
+        labeldistance=1.8,
+        labelangle=25
+    ];
+
+    patients [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="7" COLOR="#375a64">
+            <TR><TD BGCOLOR="#dff3f0"><B>patients</B></TD></TR>
+            <TR><TD ALIGN="LEFT">PK patient_id</TD></TR>
+            <TR><TD ALIGN="LEFT">phone UNIQUE</TD></TR>
+            <TR><TD ALIGN="LEFT">oms_policy_number UNIQUE</TD></TR>
+            <TR><TD ALIGN="LEFT">birth_date, sex</TD></TR>
+        </TABLE>
+    >];
+
+    doctors [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="7" COLOR="#375a64">
+            <TR><TD BGCOLOR="#dff3f0"><B>doctors</B></TD></TR>
+            <TR><TD ALIGN="LEFT">PK doctor_id</TD></TR>
+            <TR><TD ALIGN="LEFT">license_number UNIQUE</TD></TR>
+            <TR><TD ALIGN="LEFT">room</TD></TR>
+            <TR><TD ALIGN="LEFT">is_active</TD></TR>
+        </TABLE>
+    >];
+
+    specialties [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="7" COLOR="#375a64">
+            <TR><TD BGCOLOR="#dff3f0"><B>specialties</B></TD></TR>
+            <TR><TD ALIGN="LEFT">PK specialty_id</TD></TR>
+            <TR><TD ALIGN="LEFT">code UNIQUE</TD></TR>
+            <TR><TD ALIGN="LEFT">name UNIQUE</TD></TR>
+        </TABLE>
+    >];
+
+    doctor_specialties [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="7" COLOR="#375a64">
+            <TR><TD BGCOLOR="#fff0d6"><B>doctor_specialties</B></TD></TR>
+            <TR><TD ALIGN="LEFT">PK doctor_id, specialty_id</TD></TR>
+            <TR><TD ALIGN="LEFT">experience_years</TD></TR>
+            <TR><TD ALIGN="LEFT">is_primary</TD></TR>
+        </TABLE>
+    >];
+
+    work_periods [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="7" COLOR="#375a64">
+            <TR><TD BGCOLOR="#fff0d6"><B>doctor_work_periods</B></TD></TR>
+            <TR><TD ALIGN="LEFT">PK work_period_id</TD></TR>
+            <TR><TD ALIGN="LEFT">FK doctor_id</TD></TR>
+            <TR><TD ALIGN="LEFT">work_date, starts_at, ends_at</TD></TR>
+            <TR><TD ALIGN="LEFT">slot_minutes</TD></TR>
+        </TABLE>
+    >];
+
+    time_off [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="7" COLOR="#375a64">
+            <TR><TD BGCOLOR="#fff0d6"><B>doctor_time_off</B></TD></TR>
+            <TR><TD ALIGN="LEFT">PK time_off_id</TD></TR>
+            <TR><TD ALIGN="LEFT">FK doctor_id</TD></TR>
+            <TR><TD ALIGN="LEFT">starts_at, ends_at</TD></TR>
+            <TR><TD ALIGN="LEFT">reason</TD></TR>
+        </TABLE>
+    >];
+
+    appointments [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="7" COLOR="#375a64">
+            <TR><TD BGCOLOR="#e8ecff"><B>appointments</B></TD></TR>
+            <TR><TD ALIGN="LEFT">PK appointment_id</TD></TR>
+            <TR><TD ALIGN="LEFT">FK patient_id</TD></TR>
+            <TR><TD ALIGN="LEFT">FK doctor_id, specialty_id</TD></TR>
+            <TR><TD ALIGN="LEFT">starts_at, ends_at</TD></TR>
+            <TR><TD ALIGN="LEFT">status</TD></TR>
+        </TABLE>
+    >];
+
+    history [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="7" COLOR="#375a64">
+            <TR><TD BGCOLOR="#f4e9ff"><B>appointment_status_history</B></TD></TR>
+            <TR><TD ALIGN="LEFT">PK status_history_id</TD></TR>
+            <TR><TD ALIGN="LEFT">FK appointment_id</TD></TR>
+            <TR><TD ALIGN="LEFT">old_status, new_status</TD></TR>
+            <TR><TD ALIGN="LEFT">changed_at</TD></TR>
+        </TABLE>
+    >];
+
+    patients -> appointments [taillabel="1", headlabel="0..N"];
+    doctors -> appointments [taillabel="1", headlabel="0..N"];
+    specialties -> appointments [taillabel="1", headlabel="0..N"];
+    doctors -> doctor_specialties [taillabel="1", headlabel="0..N"];
+    specialties -> doctor_specialties [taillabel="1", headlabel="0..N"];
+    doctors -> work_periods [taillabel="1", headlabel="0..N"];
+    doctors -> time_off [taillabel="1", headlabel="0..N"];
+    appointments -> history [taillabel="1", headlabel="0..N"];
+}

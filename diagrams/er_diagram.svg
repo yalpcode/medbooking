@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="724pt" height="835pt"
+ viewBox="0.00 0.00 724.00 835.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(25.2 810.08)">
+<title>MedBookingER</title>
+<polygon fill="#ffffff" stroke="none" points="-25.2,25.2 -25.2,-810.08 698.45,-810.08 698.45,25.2 -25.2,25.2"/>
+<g id="node1" class="node">
+<title>patients</title>
+<polygon fill="#dff3f0" stroke="none" points="0,-735 0,-768.25 185.5,-768.25 185.5,-735 0,-735"/>
+<polygon fill="none" stroke="#375a64" points="0,-735 0,-768.25 185.5,-768.25 185.5,-735 0,-735"/>
+<text xml:space="preserve" text-anchor="start" x="68.38" y="-747.95" font-family="PT Sans" font-weight="bold" font-size="14.00">patients</text>
+<polygon fill="none" stroke="#375a64" points="0,-701.75 0,-735 185.5,-735 185.5,-701.75 0,-701.75"/>
+<text xml:space="preserve" text-anchor="start" x="8" y="-713.7" font-family="PT Sans" font-size="14.00">PK patient_id</text>
+<polygon fill="none" stroke="#375a64" points="0,-668.5 0,-701.75 185.5,-701.75 185.5,-668.5 0,-668.5"/>
+<text xml:space="preserve" text-anchor="start" x="8" y="-680.45" font-family="PT Sans" font-size="14.00">phone UNIQUE</text>
+<polygon fill="none" stroke="#375a64" points="0,-635.25 0,-668.5 185.5,-668.5 185.5,-635.25 0,-635.25"/>
+<text xml:space="preserve" text-anchor="start" x="8" y="-647.2" font-family="PT Sans" font-size="14.00">oms_policy_number UNIQUE</text>
+<polygon fill="none" stroke="#375a64" points="0,-602 0,-635.25 185.5,-635.25 185.5,-602 0,-602"/>
+<text xml:space="preserve" text-anchor="start" x="8" y="-613.95" font-family="PT Sans" font-size="14.00">birth_date, sex</text>
+</g>
+<g id="node7" class="node">
+<title>appointments</title>
+<polygon fill="#e8ecff" stroke="none" points="255.88,-751.62 255.88,-784.88 420.38,-784.88 420.38,-751.62 255.88,-751.62"/>
+<polygon fill="none" stroke="#375a64" points="255.88,-751.62 255.88,-784.88 420.38,-784.88 420.38,-751.62 255.88,-751.62"/>
+<text xml:space="preserve" text-anchor="start" x="296.88" y="-764.58" font-family="PT Sans" font-weight="bold" font-size="14.00">appointments</text>
+<polygon fill="none" stroke="#375a64" points="255.88,-718.38 255.88,-751.62 420.38,-751.62 420.38,-718.38 255.88,-718.38"/>
+<text xml:space="preserve" text-anchor="start" x="263.88" y="-730.33" font-family="PT Sans" font-size="14.00">PK appointment_id</text>
+<polygon fill="none" stroke="#375a64" points="255.88,-685.12 255.88,-718.38 420.38,-718.38 420.38,-685.12 255.88,-685.12"/>
+<text xml:space="preserve" text-anchor="start" x="263.88" y="-697.08" font-family="PT Sans" font-size="14.00">FK patient_id</text>
+<polygon fill="none" stroke="#375a64" points="255.88,-651.88 255.88,-685.12 420.38,-685.12 420.38,-651.88 255.88,-651.88"/>
+<text xml:space="preserve" text-anchor="start" x="263.88" y="-663.83" font-family="PT Sans" font-size="14.00">FK doctor_id, specialty_id</text>
+<polygon fill="none" stroke="#375a64" points="255.88,-618.62 255.88,-651.88 420.38,-651.88 420.38,-618.62 255.88,-618.62"/>
+<text xml:space="preserve" text-anchor="start" x="263.88" y="-630.58" font-family="PT Sans" font-size="14.00">starts_at, ends_at</text>
+<polygon fill="none" stroke="#375a64" points="255.88,-585.38 255.88,-618.62 420.38,-618.62 420.38,-585.38 255.88,-585.38"/>
+<text xml:space="preserve" text-anchor="start" x="263.88" y="-597.33" font-family="PT Sans" font-size="14.00">status</text>
+</g>
+<g id="edge1" class="edge">
+<title>patients&#45;&gt;appointments</title>
+<path fill="none" stroke="#375a64" d="M189.23,-685.12C205.94,-685.12 223.35,-685.12 240.11,-685.12"/>
+<polygon fill="#375a64" stroke="#375a64" points="186.21,-689.13 186.21,-681.13 187.81,-681.13 187.81,-689.13 186.21,-689.13"/>
+<polyline fill="none" stroke="#375a64" points="185.41,-685.12 189.41,-685.13"/>
+<polygon fill="#375a64" stroke="#375a64" points="247.6,-685.13 255.6,-688.73 251.93,-685.13 255.27,-685.13 255.27,-685.13 255.27,-685.13 251.93,-685.13 255.6,-681.53 247.6,-685.13"/>
+<ellipse fill="none" stroke="#375a64" cx="242.68" cy="-685.13" rx="3.2" ry="3.2"/>
+<text xml:space="preserve" text-anchor="middle" x="239.62" y="-674.19" font-family="PT Sans" font-size="11.00">0..N</text>
+<text xml:space="preserve" text-anchor="middle" x="201.73" y="-689.41" font-family="PT Sans" font-size="11.00">1</text>
+</g>
+<g id="node2" class="node">
+<title>doctors</title>
+<polygon fill="#dff3f0" stroke="none" points="12.75,-347 12.75,-380.25 172.75,-380.25 172.75,-347 12.75,-347"/>
+<polygon fill="none" stroke="#375a64" points="12.75,-347 12.75,-380.25 172.75,-380.25 172.75,-347 12.75,-347"/>
+<text xml:space="preserve" text-anchor="start" x="70.62" y="-359.95" font-family="PT Sans" font-weight="bold" font-size="14.00">doctors</text>
+<polygon fill="none" stroke="#375a64" points="12.75,-313.75 12.75,-347 172.75,-347 172.75,-313.75 12.75,-313.75"/>
+<text xml:space="preserve" text-anchor="start" x="20.75" y="-325.7" font-family="PT Sans" font-size="14.00">PK doctor_id</text>
+<polygon fill="none" stroke="#375a64" points="12.75,-280.5 12.75,-313.75 172.75,-313.75 172.75,-280.5 12.75,-280.5"/>
+<text xml:space="preserve" text-anchor="start" x="20.75" y="-292.45" font-family="PT Sans" font-size="14.00">license_number UNIQUE</text>
+<polygon fill="none" stroke="#375a64" points="12.75,-247.25 12.75,-280.5 172.75,-280.5 172.75,-247.25 12.75,-247.25"/>
+<text xml:space="preserve" text-anchor="start" x="20.75" y="-259.2" font-family="PT Sans" font-size="14.00">room</text>
+<polygon fill="none" stroke="#375a64" points="12.75,-214 12.75,-247.25 172.75,-247.25 172.75,-214 12.75,-214"/>
+<text xml:space="preserve" text-anchor="start" x="20.75" y="-225.95" font-family="PT Sans" font-size="14.00">is_active</text>
+</g>
+<g id="node4" class="node">
+<title>doctor_specialties</title>
+<polygon fill="#fff0d6" stroke="none" points="255.88,-512.38 255.88,-545.62 420.38,-545.62 420.38,-512.38 255.88,-512.38"/>
+<polygon fill="none" stroke="#375a64" points="255.88,-512.38 255.88,-545.62 420.38,-545.62 420.38,-512.38 255.88,-512.38"/>
+<text xml:space="preserve" text-anchor="start" x="284.88" y="-525.33" font-family="PT Sans" font-weight="bold" font-size="14.00">doctor_specialties</text>
+<polygon fill="none" stroke="#375a64" points="255.88,-479.12 255.88,-512.38 420.38,-512.38 420.38,-479.12 255.88,-479.12"/>
+<text xml:space="preserve" text-anchor="start" x="263.88" y="-491.07" font-family="PT Sans" font-size="14.00">PK doctor_id, specialty_id</text>
+<polygon fill="none" stroke="#375a64" points="255.88,-445.88 255.88,-479.12 420.38,-479.12 420.38,-445.88 255.88,-445.88"/>
+<text xml:space="preserve" text-anchor="start" x="263.88" y="-457.82" font-family="PT Sans" font-size="14.00">experience_years</text>
+<polygon fill="none" stroke="#375a64" points="255.88,-412.62 255.88,-445.88 420.38,-445.88 420.38,-412.62 255.88,-412.62"/>
+<text xml:space="preserve" text-anchor="start" x="263.88" y="-424.57" font-family="PT Sans" font-size="14.00">is_primary</text>
+</g>
+<g id="edge4" class="edge">
+<title>doctors&#45;&gt;doctor_specialties</title>
+<path fill="none" stroke="#375a64" d="M175.59,-358.32C197.41,-374.64 221.16,-392.4 243.56,-409.16"/>
+<polygon fill="#375a64" stroke="#375a64" points="170.68,-359.65 175.47,-353.24 176.75,-354.2 171.96,-360.6 170.68,-359.65"/>
+<polyline fill="none" stroke="#375a64" points="172.43,-355.96 175.63,-358.36"/>
+<polygon fill="#375a64" stroke="#375a64" points="249.53,-413.62 253.78,-421.3 253,-416.22 255.67,-418.21 255.67,-418.21 255.67,-418.21 253,-416.22 258.1,-415.53 249.53,-413.62"/>
+<ellipse fill="none" stroke="#375a64" cx="245.59" cy="-410.68" rx="3.2" ry="3.2"/>
+<text xml:space="preserve" text-anchor="middle" x="247.7" y="-399.43" font-family="PT Sans" font-size="11.00">0..N</text>
+<text xml:space="preserve" text-anchor="middle" x="180.94" y="-368.5" font-family="PT Sans" font-size="11.00">1</text>
+</g>
+<g id="node5" class="node">
+<title>work_periods</title>
+<polygon fill="#fff0d6" stroke="none" points="246.5,-339 246.5,-372.25 429.75,-372.25 429.75,-339 246.5,-339"/>
+<polygon fill="none" stroke="#375a64" points="246.5,-339 246.5,-372.25 429.75,-372.25 429.75,-339 246.5,-339"/>
+<text xml:space="preserve" text-anchor="start" x="276.25" y="-351.95" font-family="PT Sans" font-weight="bold" font-size="14.00">doctor_work_periods</text>
+<polygon fill="none" stroke="#375a64" points="246.5,-305.75 246.5,-339 429.75,-339 429.75,-305.75 246.5,-305.75"/>
+<text xml:space="preserve" text-anchor="start" x="254.5" y="-317.7" font-family="PT Sans" font-size="14.00">PK work_period_id</text>
+<polygon fill="none" stroke="#375a64" points="246.5,-272.5 246.5,-305.75 429.75,-305.75 429.75,-272.5 246.5,-272.5"/>
+<text xml:space="preserve" text-anchor="start" x="254.5" y="-284.45" font-family="PT Sans" font-size="14.00">FK doctor_id</text>
+<polygon fill="none" stroke="#375a64" points="246.5,-239.25 246.5,-272.5 429.75,-272.5 429.75,-239.25 246.5,-239.25"/>
+<text xml:space="preserve" text-anchor="start" x="254.5" y="-251.2" font-family="PT Sans" font-size="14.00">work_date, starts_at, ends_at</text>
+<polygon fill="none" stroke="#375a64" points="246.5,-206 246.5,-239.25 429.75,-239.25 429.75,-206 246.5,-206"/>
+<text xml:space="preserve" text-anchor="start" x="254.5" y="-217.95" font-family="PT Sans" font-size="14.00">slot_minutes</text>
+</g>
+<g id="edge6" class="edge">
+<title>doctors&#45;&gt;work_periods</title>
+<path fill="none" stroke="#375a64" d="M176.35,-294.41C193.99,-293.83 212.86,-293.21 231.24,-292.61"/>
+<polygon fill="#375a64" stroke="#375a64" points="173.36,-298.51 173.1,-290.51 174.7,-290.46 174.96,-298.46 173.36,-298.51"/>
+<polyline fill="none" stroke="#375a64" points="172.43,-294.54 176.43,-294.41"/>
+<polygon fill="#375a64" stroke="#375a64" points="238.54,-292.37 246.66,-295.7 242.88,-292.22 246.21,-292.11 246.21,-292.11 246.21,-292.11 242.88,-292.22 246.42,-288.5 238.54,-292.37"/>
+<ellipse fill="none" stroke="#375a64" cx="233.63" cy="-292.53" rx="3.2" ry="3.2"/>
+<text xml:space="preserve" text-anchor="middle" x="230.32" y="-281.7" font-family="PT Sans" font-size="11.00">0..N</text>
+<text xml:space="preserve" text-anchor="middle" x="188.99" y="-298.28" font-family="PT Sans" font-size="11.00">1</text>
+</g>
+<g id="node6" class="node">
+<title>time_off</title>
+<polygon fill="#fff0d6" stroke="none" points="279.5,-133 279.5,-166.25 396.75,-166.25 396.75,-133 279.5,-133"/>
+<polygon fill="none" stroke="#375a64" points="279.5,-133 279.5,-166.25 396.75,-166.25 396.75,-133 279.5,-133"/>
+<text xml:space="preserve" text-anchor="start" x="291.25" y="-145.95" font-family="PT Sans" font-weight="bold" font-size="14.00">doctor_time_off</text>
+<polygon fill="none" stroke="#375a64" points="279.5,-99.75 279.5,-133 396.75,-133 396.75,-99.75 279.5,-99.75"/>
+<text xml:space="preserve" text-anchor="start" x="287.5" y="-111.7" font-family="PT Sans" font-size="14.00">PK time_off_id</text>
+<polygon fill="none" stroke="#375a64" points="279.5,-66.5 279.5,-99.75 396.75,-99.75 396.75,-66.5 279.5,-66.5"/>
+<text xml:space="preserve" text-anchor="start" x="287.5" y="-78.45" font-family="PT Sans" font-size="14.00">FK doctor_id</text>
+<polygon fill="none" stroke="#375a64" points="279.5,-33.25 279.5,-66.5 396.75,-66.5 396.75,-33.25 279.5,-33.25"/>
+<text xml:space="preserve" text-anchor="start" x="287.5" y="-45.2" font-family="PT Sans" font-size="14.00">starts_at, ends_at</text>
+<polygon fill="none" stroke="#375a64" points="279.5,0 279.5,-33.25 396.75,-33.25 396.75,0 279.5,0"/>
+<text xml:space="preserve" text-anchor="start" x="287.5" y="-11.95" font-family="PT Sans" font-size="14.00">reason</text>
+</g>
+<g id="edge7" class="edge">
+<title>doctors&#45;&gt;time_off</title>
+<path fill="none" stroke="#375a64" d="M175.3,-225.42C205.35,-199 239.06,-169.35 267.92,-143.98"/>
+<polygon fill="#375a64" stroke="#375a64" points="175.67,-230.42 170.39,-224.41 171.59,-223.35 176.87,-229.36 175.67,-230.42"/>
+<polyline fill="none" stroke="#375a64" points="172.43,-227.94 175.43,-225.3"/>
+<polygon fill="#375a64" stroke="#375a64" points="273.28,-139.26 281.67,-136.68 276.54,-136.4 279.04,-134.2 279.04,-134.2 279.04,-134.2 276.54,-136.4 276.91,-131.28 273.28,-139.26"/>
+<ellipse fill="none" stroke="#375a64" cx="269.59" cy="-142.51" rx="3.2" ry="3.2"/>
+<text xml:space="preserve" text-anchor="middle" x="262.27" y="-135.49" font-family="PT Sans" font-size="11.00">0..N</text>
+<text xml:space="preserve" text-anchor="middle" x="189.71" y="-219.56" font-family="PT Sans" font-size="11.00">1</text>
+</g>
+<g id="edge2" class="edge">
+<title>doctors&#45;&gt;appointments</title>
+<path fill="none" stroke="#375a64" d="M173.51,-382.89C177.8,-388.89 181.84,-395 185.5,-401.12 225.6,-468.24 208.85,-497.61 246.5,-566.12 247.61,-568.15 248.76,-570.18 249.93,-572.21"/>
+<polygon fill="#375a64" stroke="#375a64" points="168.61,-382.94 175.09,-378.26 176.03,-379.55 169.55,-384.24 168.61,-382.94"/>
+<polyline fill="none" stroke="#375a64" points="171.38,-379.95 173.73,-383.19"/>
+<polygon fill="#375a64" stroke="#375a64" points="253.74,-578.47 254.81,-587.17 255.99,-582.17 257.72,-585.02 257.72,-585.02 257.72,-585.02 255.99,-582.17 260.97,-583.43 253.74,-578.47"/>
+<ellipse fill="none" stroke="#375a64" cx="251.18" cy="-574.26" rx="3.2" ry="3.2"/>
+<text xml:space="preserve" text-anchor="middle" x="256.09" y="-564.37" font-family="PT Sans" font-size="11.00">0..N</text>
+<text xml:space="preserve" text-anchor="middle" x="174.78" y="-394.3" font-family="PT Sans" font-size="11.00">1</text>
+</g>
+<g id="node3" class="node">
+<title>specialties</title>
+<polygon fill="#dff3f0" stroke="none" points="40.5,-520.38 40.5,-553.62 145,-553.62 145,-520.38 40.5,-520.38"/>
+<polygon fill="none" stroke="#375a64" points="40.5,-520.38 40.5,-553.62 145,-553.62 145,-520.38 40.5,-520.38"/>
+<text xml:space="preserve" text-anchor="start" x="61.62" y="-533.33" font-family="PT Sans" font-weight="bold" font-size="14.00">specialties</text>
+<polygon fill="none" stroke="#375a64" points="40.5,-487.12 40.5,-520.38 145,-520.38 145,-487.12 40.5,-487.12"/>
+<text xml:space="preserve" text-anchor="start" x="48.5" y="-499.07" font-family="PT Sans" font-size="14.00">PK specialty_id</text>
+<polygon fill="none" stroke="#375a64" points="40.5,-453.88 40.5,-487.12 145,-487.12 145,-453.88 40.5,-453.88"/>
+<text xml:space="preserve" text-anchor="start" x="48.5" y="-465.82" font-family="PT Sans" font-size="14.00">code UNIQUE</text>
+<polygon fill="none" stroke="#375a64" points="40.5,-420.62 40.5,-453.88 145,-453.88 145,-420.62 40.5,-420.62"/>
+<text xml:space="preserve" text-anchor="start" x="48.5" y="-432.57" font-family="PT Sans" font-size="14.00">name UNIQUE</text>
+</g>
+<g id="edge5" class="edge">
+<title>specialties&#45;&gt;doctor_specialties</title>
+<path fill="none" stroke="#375a64" d="M148.59,-485.32C175.69,-484.43 209.2,-483.33 240.41,-482.3"/>
+<polygon fill="#375a64" stroke="#375a64" points="145.7,-489.42 145.44,-481.42 147.04,-481.37 147.3,-489.37 145.7,-489.42"/>
+<polyline fill="none" stroke="#375a64" points="144.77,-485.45 148.77,-485.32"/>
+<polygon fill="#375a64" stroke="#375a64" points="247.67,-482.07 255.78,-485.4 252,-481.92 255.33,-481.81 255.33,-481.81 255.33,-481.81 252,-481.92 255.55,-478.2 247.67,-482.07"/>
+<ellipse fill="none" stroke="#375a64" cx="242.75" cy="-482.23" rx="3.2" ry="3.2"/>
+<text xml:space="preserve" text-anchor="middle" x="239.44" y="-471.4" font-family="PT Sans" font-size="11.00">0..N</text>
+<text xml:space="preserve" text-anchor="middle" x="161.32" y="-489.19" font-family="PT Sans" font-size="11.00">1</text>
+</g>
+<g id="edge3" class="edge">
+<title>specialties&#45;&gt;appointments</title>
+<path fill="none" stroke="#375a64" d="M147.82,-531.11C176,-554.04 211.28,-582.75 243.73,-609.14"/>
+<polygon fill="#375a64" stroke="#375a64" points="142.87,-532.24 147.91,-526.03 149.16,-527.04 144.11,-533.25 142.87,-532.24"/>
+<polyline fill="none" stroke="#375a64" points="144.77,-528.63 147.87,-531.16"/>
+<polygon fill="#375a64" stroke="#375a64" points="249.53,-613.86 253.47,-621.71 252.9,-616.6 255.48,-618.7 255.48,-618.7 255.48,-618.7 252.9,-616.6 258.01,-616.12 249.53,-613.86"/>
+<ellipse fill="none" stroke="#375a64" cx="245.72" cy="-610.76" rx="3.2" ry="3.2"/>
+<text xml:space="preserve" text-anchor="middle" x="248.14" y="-599.6" font-family="PT Sans" font-size="11.00">0..N</text>
+<text xml:space="preserve" text-anchor="middle" x="152.62" y="-541.5" font-family="PT Sans" font-size="11.00">1</text>
+</g>
+<g id="node8" class="node">
+<title>history</title>
+<polygon fill="#f4e9ff" stroke="none" points="490.75,-735 490.75,-768.25 673.25,-768.25 673.25,-735 490.75,-735"/>
+<polygon fill="none" stroke="#375a64" points="490.75,-735 490.75,-768.25 673.25,-768.25 673.25,-735 490.75,-735"/>
+<text xml:space="preserve" text-anchor="start" x="498.75" y="-747.95" font-family="PT Sans" font-weight="bold" font-size="14.00">appointment_status_history</text>
+<polygon fill="none" stroke="#375a64" points="490.75,-701.75 490.75,-735 673.25,-735 673.25,-701.75 490.75,-701.75"/>
+<text xml:space="preserve" text-anchor="start" x="498.75" y="-713.7" font-family="PT Sans" font-size="14.00">PK status_history_id</text>
+<polygon fill="none" stroke="#375a64" points="490.75,-668.5 490.75,-701.75 673.25,-701.75 673.25,-668.5 490.75,-668.5"/>
+<text xml:space="preserve" text-anchor="start" x="498.75" y="-680.45" font-family="PT Sans" font-size="14.00">FK appointment_id</text>
+<polygon fill="none" stroke="#375a64" points="490.75,-635.25 490.75,-668.5 673.25,-668.5 673.25,-635.25 490.75,-635.25"/>
+<text xml:space="preserve" text-anchor="start" x="498.75" y="-647.2" font-family="PT Sans" font-size="14.00">old_status, new_status</text>
+<polygon fill="none" stroke="#375a64" points="490.75,-602 490.75,-635.25 673.25,-635.25 673.25,-602 490.75,-602"/>
+<text xml:space="preserve" text-anchor="start" x="498.75" y="-613.95" font-family="PT Sans" font-size="14.00">changed_at</text>
+</g>
+<g id="edge8" class="edge">
+<title>appointments&#45;&gt;history</title>
+<path fill="none" stroke="#375a64" d="M424.07,-685.12C440.53,-685.12 457.98,-685.12 475.01,-685.12"/>
+<polygon fill="#375a64" stroke="#375a64" points="421.14,-689.13 421.14,-681.13 422.74,-681.13 422.74,-689.13 421.14,-689.13"/>
+<polyline fill="none" stroke="#375a64" points="420.34,-685.12 424.34,-685.13"/>
+<polygon fill="#375a64" stroke="#375a64" points="482.51,-685.13 490.51,-688.73 486.84,-685.13 490.18,-685.13 490.18,-685.13 490.18,-685.13 486.84,-685.13 490.51,-681.53 482.51,-685.13"/>
+<ellipse fill="none" stroke="#375a64" cx="477.59" cy="-685.13" rx="3.2" ry="3.2"/>
+<text xml:space="preserve" text-anchor="middle" x="474.53" y="-674.19" font-family="PT Sans" font-size="11.00">0..N</text>
+<text xml:space="preserve" text-anchor="middle" x="436.65" y="-689.41" font-family="PT Sans" font-size="11.00">1</text>
+</g>
+</g>
+</svg>

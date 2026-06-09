@@ -156,6 +156,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+postgres_data/
 
 # Spyder project settings
 .spyderproject
@@ -202,6 +203,7 @@ cython_debug/
 # .vscode/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
+.DS_Store
 
 # Ruff stuff:
 .ruff_cache/
