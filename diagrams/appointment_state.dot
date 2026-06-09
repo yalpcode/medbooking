@@ -1,0 +1,45 @@
+digraph AppointmentState {
+    graph [
+        rankdir=LR,
+        bgcolor="transparent",
+        pad=0.25,
+        nodesep=0.35,
+        ranksep=0.45
+    ];
+    node [
+        shape=rect,
+        style="rounded,filled",
+        color="#375a64",
+        fillcolor="#f8fbfb",
+        fontname="PT Sans",
+        fontsize=12
+    ];
+    edge [
+        color="#375a64",
+        fontname="PT Sans",
+        fontsize=11,
+        arrowsize=0.7
+    ];
+
+    start [label="start", shape=circle, width=0.4, fillcolor="#dff3f0"];
+    booked [label="booked", fillcolor="#e8ecff"];
+    confirmed [label="confirmed", fillcolor="#e8ecff"];
+    completed [label="completed", fillcolor="#dff3f0"];
+    no_show [label="no_show", fillcolor="#fff0d6"];
+    cancelled_patient [label="cancelled_by_patient", fillcolor="#ffe6e6"];
+    cancelled_clinic [label="cancelled_by_clinic", fillcolor="#ffe6e6"];
+    finish [label="finish", shape=doublecircle, width=0.45, fillcolor="#dff3f0"];
+
+    start -> booked;
+    booked -> confirmed;
+    booked -> cancelled_patient;
+    booked -> cancelled_clinic;
+    confirmed -> completed;
+    confirmed -> no_show;
+    confirmed -> cancelled_patient;
+    confirmed -> cancelled_clinic;
+    completed -> finish;
+    no_show -> finish;
+    cancelled_patient -> finish;
+    cancelled_clinic -> finish;
+}

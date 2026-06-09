@@ -1,0 +1,13 @@
+stateDiagram-v2
+    [*] --> booked
+    booked --> confirmed
+    booked --> cancelled_by_patient
+    booked --> cancelled_by_clinic
+    confirmed --> completed
+    confirmed --> no_show
+    confirmed --> cancelled_by_patient
+    confirmed --> cancelled_by_clinic
+    completed --> [*]
+    no_show --> [*]
+    cancelled_by_patient --> [*]
+    cancelled_by_clinic --> [*]
