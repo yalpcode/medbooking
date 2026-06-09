@@ -1,0 +1,31 @@
+digraph NormalizationFlow {
+    graph [
+        rankdir=LR,
+        bgcolor="transparent",
+        pad=0.25,
+        nodesep=0.4,
+        ranksep=0.55
+    ];
+    node [
+        shape=rect,
+        style="rounded,filled",
+        color="#375a64",
+        fillcolor="#f8fbfb",
+        fontname="PT Sans",
+        fontsize=12,
+        margin="0.13,0.08"
+    ];
+    edge [
+        color="#375a64",
+        arrowsize=0.7
+    ];
+
+    raw [label="raw_appointments\nповторения и смешанные сущности", fillcolor="#ffe6e6"];
+    nf1 [label="1НФ\nатомарные поля", fillcolor="#fff0d6"];
+    nf2 [label="2НФ\nнет частичных зависимостей", fillcolor="#fff0d6"];
+    nf3 [label="3НФ\nнет транзитивных зависимостей", fillcolor="#fff0d6"];
+    bcnf [label="BCNF\nдетерминанты являются ключами", fillcolor="#dff3f0"];
+    final [label="MedBooking\nитоговая схема", fillcolor="#dff3f0"];
+
+    raw -> nf1 -> nf2 -> nf3 -> bcnf -> final;
+}

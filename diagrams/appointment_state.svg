@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="536pt" height="255pt"
+ viewBox="0.00 0.00 536.00 255.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 237)">
+<title>AppointmentState</title>
+<g id="node1" class="node">
+<title>start</title>
+<ellipse fill="#dff3f0" stroke="#375a64" cx="27.75" cy="-76" rx="27.75" ry="27.75"/>
+<text xml:space="preserve" text-anchor="middle" x="27.75" y="-72.1" font-family="PT Sans" font-size="12.00">start</text>
+</g>
+<g id="node2" class="node">
+<title>booked</title>
+<path fill="#e8ecff" stroke="#375a64" d="M129.76,-94C129.76,-94 99.51,-94 99.51,-94 93.51,-94 87.51,-88 87.51,-82 87.51,-82 87.51,-70 87.51,-70 87.51,-64 93.51,-58 99.51,-58 99.51,-58 129.76,-58 129.76,-58 135.76,-58 141.76,-64 141.76,-70 141.76,-70 141.76,-82 141.76,-82 141.76,-88 135.76,-94 129.76,-94"/>
+<text xml:space="preserve" text-anchor="middle" x="114.63" y="-72.1" font-family="PT Sans" font-size="12.00">booked</text>
+</g>
+<g id="edge1" class="edge">
+<title>start&#45;&gt;booked</title>
+<path fill="none" stroke="#375a64" d="M55.61,-76C63.03,-76 71.19,-76 78.98,-76"/>
+<polygon fill="#375a64" stroke="#375a64" points="78.73,-78.45 85.73,-76 78.73,-73.55 78.73,-78.45"/>
+</g>
+<g id="node3" class="node">
+<title>confirmed</title>
+<path fill="#e8ecff" stroke="#375a64" d="M229.51,-150C229.51,-150 185.76,-150 185.76,-150 179.76,-150 173.76,-144 173.76,-138 173.76,-138 173.76,-126 173.76,-126 173.76,-120 179.76,-114 185.76,-114 185.76,-114 229.51,-114 229.51,-114 235.51,-114 241.51,-120 241.51,-126 241.51,-126 241.51,-138 241.51,-138 241.51,-144 235.51,-150 229.51,-150"/>
+<text xml:space="preserve" text-anchor="middle" x="207.63" y="-128.1" font-family="PT Sans" font-size="12.00">confirmed</text>
+</g>
+<g id="edge2" class="edge">
+<title>booked&#45;&gt;confirmed</title>
+<path fill="none" stroke="#375a64" d="M141.95,-92.2C150.65,-97.55 160.5,-103.61 169.84,-109.36"/>
+<polygon fill="#375a64" stroke="#375a64" points="168.32,-111.3 175.56,-112.88 170.89,-107.12 168.32,-111.3"/>
+</g>
+<g id="node6" class="node">
+<title>cancelled_patient</title>
+<path fill="#ffe6e6" stroke="#375a64" d="M384.76,-97C384.76,-97 285.51,-97 285.51,-97 279.51,-97 273.51,-91 273.51,-85 273.51,-85 273.51,-73 273.51,-73 273.51,-67 279.51,-61 285.51,-61 285.51,-61 384.76,-61 384.76,-61 390.76,-61 396.76,-67 396.76,-73 396.76,-73 396.76,-85 396.76,-85 396.76,-91 390.76,-97 384.76,-97"/>
+<text xml:space="preserve" text-anchor="middle" x="335.13" y="-75.1" font-family="PT Sans" font-size="12.00">cancelled_by_patient</text>
+</g>
+<g id="edge3" class="edge">
+<title>booked&#45;&gt;cancelled_patient</title>
+<path fill="none" stroke="#375a64" d="M141.99,-76.36C172.25,-76.78 223.1,-77.48 264.89,-78.05"/>
+<polygon fill="#375a64" stroke="#375a64" points="264.85,-80.5 271.88,-78.15 264.91,-75.6 264.85,-80.5"/>
+</g>
+<g id="node7" class="node">
+<title>cancelled_clinic</title>
+<path fill="#ffe6e6" stroke="#375a64" d="M380.26,-36C380.26,-36 290.01,-36 290.01,-36 284.01,-36 278.01,-30 278.01,-24 278.01,-24 278.01,-12 278.01,-12 278.01,-6 284.01,0 290.01,0 290.01,0 380.26,0 380.26,0 386.26,0 392.26,-6 392.26,-12 392.26,-12 392.26,-24 392.26,-24 392.26,-30 386.26,-36 380.26,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="335.13" y="-14.1" font-family="PT Sans" font-size="12.00">cancelled_by_clinic</text>
+</g>
+<g id="edge4" class="edge">
+<title>booked&#45;&gt;cancelled_clinic</title>
+<path fill="none" stroke="#375a64" d="M141.99,-69C173.45,-60.65 227.14,-46.4 269.79,-35.08"/>
+<polygon fill="#375a64" stroke="#375a64" points="270.29,-37.48 276.43,-33.32 269.03,-32.75 270.29,-37.48"/>
+</g>
+<g id="node4" class="node">
+<title>completed</title>
+<path fill="#dff3f0" stroke="#375a64" d="M358.51,-219C358.51,-219 311.76,-219 311.76,-219 305.76,-219 299.76,-213 299.76,-207 299.76,-207 299.76,-195 299.76,-195 299.76,-189 305.76,-183 311.76,-183 311.76,-183 358.51,-183 358.51,-183 364.51,-183 370.51,-189 370.51,-195 370.51,-195 370.51,-207 370.51,-207 370.51,-213 364.51,-219 358.51,-219"/>
+<text xml:space="preserve" text-anchor="middle" x="335.13" y="-197.1" font-family="PT Sans" font-size="12.00">completed</text>
+</g>
+<g id="edge5" class="edge">
+<title>confirmed&#45;&gt;completed</title>
+<path fill="none" stroke="#375a64" d="M238.05,-150.38C249.06,-157.07 261.75,-164.57 273.51,-171 279.51,-174.28 285.91,-177.62 292.23,-180.82"/>
+<polygon fill="#375a64" stroke="#375a64" points="290.87,-182.88 298.22,-183.83 293.06,-178.5 290.87,-182.88"/>
+</g>
+<g id="node5" class="node">
+<title>no_show</title>
+<path fill="#fff0d6" stroke="#375a64" d="M354.01,-158C354.01,-158 316.26,-158 316.26,-158 310.26,-158 304.26,-152 304.26,-146 304.26,-146 304.26,-134 304.26,-134 304.26,-128 310.26,-122 316.26,-122 316.26,-122 354.01,-122 354.01,-122 360.01,-122 366.01,-128 366.01,-134 366.01,-134 366.01,-146 366.01,-146 366.01,-152 360.01,-158 354.01,-158"/>
+<text xml:space="preserve" text-anchor="middle" x="335.13" y="-136.1" font-family="PT Sans" font-size="12.00">no_show</text>
+</g>
+<g id="edge6" class="edge">
+<title>confirmed&#45;&gt;no_show</title>
+<path fill="none" stroke="#375a64" d="M241.94,-134.12C258.53,-135.18 278.69,-136.47 295.92,-137.56"/>
+<polygon fill="#375a64" stroke="#375a64" points="295.46,-139.99 302.6,-137.99 295.77,-135.1 295.46,-139.99"/>
+</g>
+<g id="edge7" class="edge">
+<title>confirmed&#45;&gt;cancelled_patient</title>
+<path fill="none" stroke="#375a64" d="M241.94,-117.94C254.56,-112.61 269.23,-106.41 283.12,-100.54"/>
+<polygon fill="#375a64" stroke="#375a64" points="283.84,-102.9 289.34,-97.92 281.93,-98.38 283.84,-102.9"/>
+</g>
+<g id="edge8" class="edge">
+<title>confirmed&#45;&gt;cancelled_clinic</title>
+<path fill="none" stroke="#375a64" d="M219.64,-113.6C231.24,-95.39 250.94,-67.63 273.51,-49 277.13,-46.01 281.09,-43.2 285.19,-40.59"/>
+<polygon fill="#375a64" stroke="#375a64" points="286.15,-42.87 290.89,-37.17 283.63,-38.67 286.15,-42.87"/>
+</g>
+<g id="node8" class="node">
+<title>finish</title>
+<ellipse fill="#dff3f0" stroke="#375a64" cx="464.22" cy="-109" rx="31.47" ry="31.47"/>
+<ellipse fill="none" stroke="#375a64" cx="464.22" cy="-109" rx="35.47" ry="35.47"/>
+<text xml:space="preserve" text-anchor="middle" x="464.22" y="-105.1" font-family="PT Sans" font-size="12.00">finish</text>
+</g>
+<g id="edge9" class="edge">
+<title>completed&#45;&gt;finish</title>
+<path fill="none" stroke="#375a64" d="M370.79,-186.01C379.55,-181.65 388.74,-176.54 396.76,-171 409.57,-162.14 422.38,-150.89 433.29,-140.42"/>
+<polygon fill="#375a64" stroke="#375a64" points="434.77,-142.4 438.07,-135.76 431.35,-138.9 434.77,-142.4"/>
+</g>
+<g id="edge10" class="edge">
+<title>no_show&#45;&gt;finish</title>
+<path fill="none" stroke="#375a64" d="M366.25,-132.65C382.67,-128.65 403.26,-123.63 421.24,-119.24"/>
+<polygon fill="#375a64" stroke="#375a64" points="421.6,-121.68 427.82,-117.64 420.44,-116.91 421.6,-121.68"/>
+</g>
+<g id="edge11" class="edge">
+<title>cancelled_patient&#45;&gt;finish</title>
+<path fill="none" stroke="#375a64" d="M397.07,-93.38C405.21,-95.31 413.41,-97.24 421.13,-99.06"/>
+<polygon fill="#375a64" stroke="#375a64" points="420.44,-101.42 427.82,-100.64 421.57,-96.65 420.44,-101.42"/>
+</g>
+<g id="edge12" class="edge">
+<title>cancelled_clinic&#45;&gt;finish</title>
+<path fill="none" stroke="#375a64" d="M375.81,-36.39C382.98,-40.24 390.24,-44.51 396.76,-49 409.17,-57.56 421.71,-68.24 432.51,-78.21"/>
+<polygon fill="#375a64" stroke="#375a64" points="430.77,-79.93 437.55,-82.94 434.12,-76.36 430.77,-79.93"/>
+</g>
+</g>
+</svg>

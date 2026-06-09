@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="1205pt" height="78pt"
+ viewBox="0.00 0.00 1205.00 78.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 59.52)">
+<title>NormalizationFlow</title>
+<g id="node1" class="node">
+<title>raw</title>
+<path fill="#ffe6e6" stroke="#375a64" d="M196.47,-41.52C196.47,-41.52 12,-41.52 12,-41.52 6,-41.52 0,-35.52 0,-29.52 0,-29.52 0,-12 0,-12 0,-6 6,0 12,0 12,0 196.47,0 196.47,0 202.47,0 208.47,-6 208.47,-12 208.47,-12 208.47,-29.52 208.47,-29.52 208.47,-35.52 202.47,-41.52 196.47,-41.52"/>
+<text xml:space="preserve" text-anchor="middle" x="104.23" y="-24.36" font-family="PT Sans" font-size="12.00">raw_appointments</text>
+<text xml:space="preserve" text-anchor="middle" x="104.23" y="-9.36" font-family="PT Sans" font-size="12.00">повторения и смешанные сущности</text>
+</g>
+<g id="node2" class="node">
+<title>nf1</title>
+<path fill="#fff0d6" stroke="#375a64" d="M341.44,-41.52C341.44,-41.52 260.47,-41.52 260.47,-41.52 254.47,-41.52 248.47,-35.52 248.47,-29.52 248.47,-29.52 248.47,-12 248.47,-12 248.47,-6 254.47,0 260.47,0 260.47,0 341.44,0 341.44,0 347.44,0 353.44,-6 353.44,-12 353.44,-12 353.44,-29.52 353.44,-29.52 353.44,-35.52 347.44,-41.52 341.44,-41.52"/>
+<text xml:space="preserve" text-anchor="middle" x="300.95" y="-24.36" font-family="PT Sans" font-size="12.00">1НФ</text>
+<text xml:space="preserve" text-anchor="middle" x="300.95" y="-9.36" font-family="PT Sans" font-size="12.00">атомарные поля</text>
+</g>
+<g id="edge1" class="edge">
+<title>raw&#45;&gt;nf1</title>
+<path fill="none" stroke="#375a64" d="M208.87,-20.76C219.4,-20.76 229.84,-20.76 239.69,-20.76"/>
+<polygon fill="#375a64" stroke="#375a64" points="239.66,-23.21 246.66,-20.76 239.66,-18.31 239.66,-23.21"/>
+</g>
+<g id="node3" class="node">
+<title>nf2</title>
+<path fill="#fff0d6" stroke="#375a64" d="M551.66,-41.52C551.66,-41.52 405.44,-41.52 405.44,-41.52 399.44,-41.52 393.44,-35.52 393.44,-29.52 393.44,-29.52 393.44,-12 393.44,-12 393.44,-6 399.44,0 405.44,0 405.44,0 551.66,0 551.66,0 557.66,0 563.66,-6 563.66,-12 563.66,-12 563.66,-29.52 563.66,-29.52 563.66,-35.52 557.66,-41.52 551.66,-41.52"/>
+<text xml:space="preserve" text-anchor="middle" x="478.55" y="-24.36" font-family="PT Sans" font-size="12.00">2НФ</text>
+<text xml:space="preserve" text-anchor="middle" x="478.55" y="-9.36" font-family="PT Sans" font-size="12.00">нет частичных зависимостей</text>
+</g>
+<g id="edge2" class="edge">
+<title>nf1&#45;&gt;nf2</title>
+<path fill="none" stroke="#375a64" d="M353.69,-20.76C363.61,-20.76 374.26,-20.76 385.02,-20.76"/>
+<polygon fill="#375a64" stroke="#375a64" points="384.73,-23.21 391.73,-20.76 384.73,-18.31 384.73,-23.21"/>
+</g>
+<g id="node4" class="node">
+<title>nf3</title>
+<path fill="#fff0d6" stroke="#375a64" d="M780.63,-41.52C780.63,-41.52 615.66,-41.52 615.66,-41.52 609.66,-41.52 603.66,-35.52 603.66,-29.52 603.66,-29.52 603.66,-12 603.66,-12 603.66,-6 609.66,0 615.66,0 615.66,0 780.63,0 780.63,0 786.63,0 792.63,-6 792.63,-12 792.63,-12 792.63,-29.52 792.63,-29.52 792.63,-35.52 786.63,-41.52 780.63,-41.52"/>
+<text xml:space="preserve" text-anchor="middle" x="698.14" y="-24.36" font-family="PT Sans" font-size="12.00">3НФ</text>
+<text xml:space="preserve" text-anchor="middle" x="698.14" y="-9.36" font-family="PT Sans" font-size="12.00">нет транзитивных зависимостей</text>
+</g>
+<g id="edge3" class="edge">
+<title>nf2&#45;&gt;nf3</title>
+<path fill="none" stroke="#375a64" d="M563.99,-20.76C574.17,-20.76 584.65,-20.76 595.05,-20.76"/>
+<polygon fill="#375a64" stroke="#375a64" points="594.85,-23.21 601.85,-20.76 594.85,-18.31 594.85,-23.21"/>
+</g>
+<g id="node5" class="node">
+<title>bcnf</title>
+<path fill="#dff3f0" stroke="#375a64" d="M1017.1,-41.52C1017.1,-41.52 844.63,-41.52 844.63,-41.52 838.63,-41.52 832.63,-35.52 832.63,-29.52 832.63,-29.52 832.63,-12 832.63,-12 832.63,-6 838.63,0 844.63,0 844.63,0 1017.1,0 1017.1,0 1023.1,0 1029.1,-6 1029.1,-12 1029.1,-12 1029.1,-29.52 1029.1,-29.52 1029.1,-35.52 1023.1,-41.52 1017.1,-41.52"/>
+<text xml:space="preserve" text-anchor="middle" x="930.87" y="-24.36" font-family="PT Sans" font-size="12.00">BCNF</text>
+<text xml:space="preserve" text-anchor="middle" x="930.87" y="-9.36" font-family="PT Sans" font-size="12.00">детерминанты являются ключами</text>
+</g>
+<g id="edge4" class="edge">
+<title>nf3&#45;&gt;bcnf</title>
+<path fill="none" stroke="#375a64" d="M792.99,-20.76C803.23,-20.76 813.7,-20.76 824.07,-20.76"/>
+<polygon fill="#375a64" stroke="#375a64" points="823.84,-23.21 830.84,-20.76 823.84,-18.31 823.84,-23.21"/>
+</g>
+<g id="node6" class="node">
+<title>final</title>
+<path fill="#dff3f0" stroke="#375a64" d="M1156.82,-41.52C1156.82,-41.52 1081.1,-41.52 1081.1,-41.52 1075.1,-41.52 1069.1,-35.52 1069.1,-29.52 1069.1,-29.52 1069.1,-12 1069.1,-12 1069.1,-6 1075.1,0 1081.1,0 1081.1,0 1156.82,0 1156.82,0 1162.82,0 1168.82,-6 1168.82,-12 1168.82,-12 1168.82,-29.52 1168.82,-29.52 1168.82,-35.52 1162.82,-41.52 1156.82,-41.52"/>
+<text xml:space="preserve" text-anchor="middle" x="1118.96" y="-24.36" font-family="PT Sans" font-size="12.00">MedBooking</text>
+<text xml:space="preserve" text-anchor="middle" x="1118.96" y="-9.36" font-family="PT Sans" font-size="12.00">итоговая схема</text>
+</g>
+<g id="edge5" class="edge">
+<title>bcnf&#45;&gt;final</title>
+<path fill="none" stroke="#375a64" d="M1029.54,-20.76C1040.13,-20.76 1050.64,-20.76 1060.52,-20.76"/>
+<polygon fill="#375a64" stroke="#375a64" points="1060.51,-23.21 1067.51,-20.76 1060.51,-18.31 1060.51,-23.21"/>
+</g>
+</g>
+</svg>

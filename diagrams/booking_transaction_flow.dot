@@ -1,0 +1,45 @@
+digraph BookingFlow {
+    graph [
+        rankdir=TB,
+        bgcolor="transparent",
+        pad=0.25,
+        nodesep=0.35,
+        ranksep=0.45
+    ];
+    node [
+        shape=rect,
+        style="rounded,filled",
+        color="#375a64",
+        fillcolor="#f8fbfb",
+        fontname="PT Sans",
+        fontsize=12,
+        margin="0.12,0.08"
+    ];
+    edge [
+        color="#375a64",
+        fontname="PT Sans",
+        fontsize=11,
+        arrowsize=0.7
+    ];
+
+    start [label="Пациент выбирает\nспециальность и дату", fillcolor="#dff3f0"];
+    slots [label="Система строит\nсвободные слоты"];
+    choose [label="Регистратор выбирает\nврача и время"];
+    check [label="Слот еще доступен?", shape=diamond, fillcolor="#fff0d6"];
+    conflict [label="Показать конфликт\nи предложить другое время", fillcolor="#ffe6e6"];
+    begin [label="BEGIN", fillcolor="#e8ecff"];
+    lock [label="Блокировка врача\nи повторная проверка"];
+    insert [label="INSERT INTO appointments"];
+    constraints [label="Ограничения БД\nпройдены?", shape=diamond, fillcolor="#fff0d6"];
+    rollback [label="ROLLBACK", fillcolor="#ffe6e6"];
+    commit [label="COMMIT", fillcolor="#dff3f0"];
+    done [label="Запись создана", fillcolor="#dff3f0"];
+
+    start -> slots -> choose -> check;
+    check -> conflict [label="нет"];
+    check -> begin [label="да"];
+    begin -> lock -> insert -> constraints;
+    constraints -> rollback [label="нет"];
+    constraints -> commit [label="да"];
+    commit -> done;
+}

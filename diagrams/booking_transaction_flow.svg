@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="387pt" height="811pt"
+ viewBox="0.00 0.00 387.00 811.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 793.18)">
+<title>BookingFlow</title>
+<g id="node1" class="node">
+<title>start</title>
+<path fill="#dff3f0" stroke="#375a64" d="M173.67,-775.18C173.67,-775.18 67.89,-775.18 67.89,-775.18 61.89,-775.18 55.89,-769.18 55.89,-763.18 55.89,-763.18 55.89,-745.66 55.89,-745.66 55.89,-739.66 61.89,-733.66 67.89,-733.66 67.89,-733.66 173.67,-733.66 173.67,-733.66 179.67,-733.66 185.67,-739.66 185.67,-745.66 185.67,-745.66 185.67,-763.18 185.67,-763.18 185.67,-769.18 179.67,-775.18 173.67,-775.18"/>
+<text xml:space="preserve" text-anchor="middle" x="120.78" y="-758.02" font-family="PT Sans" font-size="12.00">Пациент выбирает</text>
+<text xml:space="preserve" text-anchor="middle" x="120.78" y="-743.02" font-family="PT Sans" font-size="12.00">специальность и дату</text>
+</g>
+<g id="node2" class="node">
+<title>slots</title>
+<path fill="#f8fbfb" stroke="#375a64" d="M163.17,-700.66C163.17,-700.66 78.39,-700.66 78.39,-700.66 72.39,-700.66 66.39,-694.66 66.39,-688.66 66.39,-688.66 66.39,-671.14 66.39,-671.14 66.39,-665.14 72.39,-659.14 78.39,-659.14 78.39,-659.14 163.17,-659.14 163.17,-659.14 169.17,-659.14 175.17,-665.14 175.17,-671.14 175.17,-671.14 175.17,-688.66 175.17,-688.66 175.17,-694.66 169.17,-700.66 163.17,-700.66"/>
+<text xml:space="preserve" text-anchor="middle" x="120.78" y="-683.5" font-family="PT Sans" font-size="12.00">Система строит</text>
+<text xml:space="preserve" text-anchor="middle" x="120.78" y="-668.5" font-family="PT Sans" font-size="12.00">свободные слоты</text>
+</g>
+<g id="edge1" class="edge">
+<title>start&#45;&gt;slots</title>
+<path fill="none" stroke="#375a64" d="M120.78,-733.22C120.78,-725.83 120.78,-717.33 120.78,-709.36"/>
+<polygon fill="#375a64" stroke="#375a64" points="123.23,-709.51 120.78,-702.51 118.33,-709.51 123.23,-709.51"/>
+</g>
+<g id="node3" class="node">
+<title>choose</title>
+<path fill="#f8fbfb" stroke="#375a64" d="M176.3,-626.14C176.3,-626.14 65.26,-626.14 65.26,-626.14 59.26,-626.14 53.27,-620.14 53.27,-614.14 53.27,-614.14 53.27,-596.62 53.27,-596.62 53.27,-590.62 59.27,-584.62 65.27,-584.62 65.27,-584.62 176.3,-584.62 176.3,-584.62 182.3,-584.62 188.3,-590.62 188.3,-596.62 188.3,-596.62 188.3,-614.14 188.3,-614.14 188.3,-620.14 182.3,-626.14 176.3,-626.14"/>
+<text xml:space="preserve" text-anchor="middle" x="120.78" y="-608.98" font-family="PT Sans" font-size="12.00">Регистратор выбирает</text>
+<text xml:space="preserve" text-anchor="middle" x="120.78" y="-593.98" font-family="PT Sans" font-size="12.00">врача и время</text>
+</g>
+<g id="edge2" class="edge">
+<title>slots&#45;&gt;choose</title>
+<path fill="none" stroke="#375a64" d="M120.78,-658.7C120.78,-651.31 120.78,-642.81 120.78,-634.84"/>
+<polygon fill="#375a64" stroke="#375a64" points="123.23,-634.99 120.78,-627.99 118.33,-634.99 123.23,-634.99"/>
+</g>
+<g id="node4" class="node">
+<title>check</title>
+<path fill="#fff0d6" stroke="#375a64" d="M109.06,-549.05C109.06,-549.05 11.72,-527.67 11.72,-527.67 5.86,-526.39 5.86,-523.81 11.72,-522.53 11.72,-522.53 109.06,-501.15 109.06,-501.15 114.92,-499.87 126.64,-499.87 132.5,-501.15 132.5,-501.15 229.84,-522.53 229.84,-522.53 235.7,-523.81 235.7,-526.39 229.84,-527.67 229.84,-527.67 132.5,-549.05 132.5,-549.05 126.64,-550.33 114.92,-550.33 109.06,-549.05"/>
+<text xml:space="preserve" text-anchor="middle" x="120.78" y="-521.2" font-family="PT Sans" font-size="12.00">Слот еще доступен?</text>
+</g>
+<g id="edge3" class="edge">
+<title>choose&#45;&gt;check</title>
+<path fill="none" stroke="#375a64" d="M120.78,-584.22C120.78,-576.96 120.78,-568.55 120.78,-560.42"/>
+<polygon fill="#375a64" stroke="#375a64" points="123.23,-560.62 120.78,-553.62 118.33,-560.62 123.23,-560.62"/>
+</g>
+<g id="node5" class="node">
+<title>conflict</title>
+<path fill="#ffe6e6" stroke="#375a64" d="M167.55,-452.33C167.55,-452.33 28.01,-452.33 28.01,-452.33 22.01,-452.33 16.02,-446.33 16.02,-440.33 16.02,-440.33 16.02,-422.81 16.02,-422.81 16.02,-416.81 22.02,-410.81 28.02,-410.81 28.02,-410.81 167.55,-410.81 167.55,-410.81 173.55,-410.81 179.55,-416.81 179.55,-422.81 179.55,-422.81 179.55,-440.33 179.55,-440.33 179.55,-446.33 173.55,-452.33 167.55,-452.33"/>
+<text xml:space="preserve" text-anchor="middle" x="97.78" y="-435.17" font-family="PT Sans" font-size="12.00">Показать конфликт</text>
+<text xml:space="preserve" text-anchor="middle" x="97.78" y="-420.17" font-family="PT Sans" font-size="12.00">и предложить другое время</text>
+</g>
+<g id="edge4" class="edge">
+<title>check&#45;&gt;conflict</title>
+<path fill="none" stroke="#375a64" d="M114.62,-499.57C111.61,-487.61 107.98,-473.16 104.86,-460.75"/>
+<polygon fill="#375a64" stroke="#375a64" points="107.25,-460.2 103.17,-454.01 102.5,-461.39 107.25,-460.2"/>
+<text xml:space="preserve" text-anchor="middle" x="117.84" y="-472.13" font-family="PT Sans" font-size="11.00">нет</text>
+</g>
+<g id="node6" class="node">
+<title>begin</title>
+<path fill="#e8ecff" stroke="#375a64" d="M246.78,-449.57C246.78,-449.57 216.78,-449.57 216.78,-449.57 210.78,-449.57 204.78,-443.57 204.78,-437.57 204.78,-437.57 204.78,-425.57 204.78,-425.57 204.78,-419.57 210.78,-413.57 216.78,-413.57 216.78,-413.57 246.78,-413.57 246.78,-413.57 252.78,-413.57 258.78,-419.57 258.78,-425.57 258.78,-425.57 258.78,-437.57 258.78,-437.57 258.78,-443.57 252.78,-449.57 246.78,-449.57"/>
+<text xml:space="preserve" text-anchor="middle" x="231.78" y="-427.67" font-family="PT Sans" font-size="12.00">BEGIN</text>
+</g>
+<g id="edge5" class="edge">
+<title>check&#45;&gt;begin</title>
+<path fill="none" stroke="#375a64" d="M145.69,-503.56C163.11,-489.19 186.38,-470.01 204.33,-455.2"/>
+<polygon fill="#375a64" stroke="#375a64" points="205.67,-457.27 209.52,-450.93 202.56,-453.49 205.67,-457.27"/>
+<text xml:space="preserve" text-anchor="middle" x="191.85" y="-472.13" font-family="PT Sans" font-size="11.00">да</text>
+</g>
+<g id="node7" class="node">
+<title>lock</title>
+<path fill="#f8fbfb" stroke="#375a64" d="M288.42,-377.81C288.42,-377.81 175.14,-377.81 175.14,-377.81 169.14,-377.81 163.14,-371.81 163.14,-365.81 163.14,-365.81 163.14,-348.29 163.14,-348.29 163.14,-342.29 169.14,-336.29 175.14,-336.29 175.14,-336.29 288.42,-336.29 288.42,-336.29 294.42,-336.29 300.42,-342.29 300.42,-348.29 300.42,-348.29 300.42,-365.81 300.42,-365.81 300.42,-371.81 294.42,-377.81 288.42,-377.81"/>
+<text xml:space="preserve" text-anchor="middle" x="231.78" y="-360.65" font-family="PT Sans" font-size="12.00">Блокировка врача</text>
+<text xml:space="preserve" text-anchor="middle" x="231.78" y="-345.65" font-family="PT Sans" font-size="12.00">и повторная проверка</text>
+</g>
+<g id="edge6" class="edge">
+<title>begin&#45;&gt;lock</title>
+<path fill="none" stroke="#375a64" d="M231.78,-413.38C231.78,-405.39 231.78,-395.66 231.78,-386.6"/>
+<polygon fill="#375a64" stroke="#375a64" points="234.23,-386.71 231.78,-379.71 229.33,-386.71 234.23,-386.71"/>
+</g>
+<g id="node8" class="node">
+<title>insert</title>
+<path fill="#f8fbfb" stroke="#375a64" d="M298.92,-303.29C298.92,-303.29 164.64,-303.29 164.64,-303.29 158.64,-303.29 152.64,-297.29 152.64,-291.29 152.64,-291.29 152.64,-279.29 152.64,-279.29 152.64,-273.29 158.64,-267.29 164.64,-267.29 164.64,-267.29 298.92,-267.29 298.92,-267.29 304.92,-267.29 310.92,-273.29 310.92,-279.29 310.92,-279.29 310.92,-291.29 310.92,-291.29 310.92,-297.29 304.92,-303.29 298.92,-303.29"/>
+<text xml:space="preserve" text-anchor="middle" x="231.78" y="-281.39" font-family="PT Sans" font-size="12.00">INSERT INTO appointments</text>
+</g>
+<g id="edge7" class="edge">
+<title>lock&#45;&gt;insert</title>
+<path fill="none" stroke="#375a64" d="M231.78,-335.87C231.78,-328.31 231.78,-319.61 231.78,-311.64"/>
+<polygon fill="#375a64" stroke="#375a64" points="234.23,-311.87 231.78,-304.87 229.33,-311.87 234.23,-311.87"/>
+</g>
+<g id="node9" class="node">
+<title>constraints</title>
+<path fill="#fff0d6" stroke="#375a64" d="M220.61,-229.91C220.61,-229.91 137.17,-197.15 137.17,-197.15 131.59,-194.96 131.59,-190.58 137.17,-188.39 137.17,-188.39 220.61,-155.63 220.61,-155.63 226.19,-153.44 237.37,-153.44 242.95,-155.63 242.95,-155.63 326.39,-188.39 326.39,-188.39 331.97,-190.58 331.97,-194.96 326.39,-197.15 326.39,-197.15 242.95,-229.91 242.95,-229.91 237.37,-232.1 226.19,-232.1 220.61,-229.91"/>
+<text xml:space="preserve" text-anchor="middle" x="231.78" y="-196.37" font-family="PT Sans" font-size="12.00">Ограничения БД</text>
+<text xml:space="preserve" text-anchor="middle" x="231.78" y="-181.37" font-family="PT Sans" font-size="12.00">пройдены?</text>
+</g>
+<g id="edge8" class="edge">
+<title>insert&#45;&gt;constraints</title>
+<path fill="none" stroke="#375a64" d="M231.78,-266.84C231.78,-259.98 231.78,-251.73 231.78,-243.28"/>
+<polygon fill="#375a64" stroke="#375a64" points="234.23,-243.32 231.78,-236.32 229.33,-243.32 234.23,-243.32"/>
+</g>
+<g id="node10" class="node">
+<title>rollback</title>
+<path fill="#ffe6e6" stroke="#375a64" d="M232.8,-105C232.8,-105 184.76,-105 184.76,-105 178.76,-105 172.76,-99 172.76,-93 172.76,-93 172.76,-81 172.76,-81 172.76,-75 178.76,-69 184.76,-69 184.76,-69 232.8,-69 232.8,-69 238.8,-69 244.8,-75 244.8,-81 244.8,-81 244.8,-93 244.8,-93 244.8,-99 238.8,-105 232.8,-105"/>
+<text xml:space="preserve" text-anchor="middle" x="208.78" y="-83.1" font-family="PT Sans" font-size="12.00">ROLLBACK</text>
+</g>
+<g id="edge9" class="edge">
+<title>constraints&#45;&gt;rollback</title>
+<path fill="none" stroke="#375a64" d="M223.41,-154.01C220.41,-140.45 217.09,-125.5 214.38,-113.26"/>
+<polygon fill="#375a64" stroke="#375a64" points="216.84,-113.05 212.93,-106.74 212.06,-114.11 216.84,-113.05"/>
+<text xml:space="preserve" text-anchor="middle" x="226.78" y="-124.8" font-family="PT Sans" font-size="11.00">нет</text>
+</g>
+<g id="node11" class="node">
+<title>commit</title>
+<path fill="#dff3f0" stroke="#375a64" d="M319.92,-105C319.92,-105 281.64,-105 281.64,-105 275.64,-105 269.64,-99 269.64,-93 269.64,-93 269.64,-81 269.64,-81 269.64,-75 275.64,-69 281.64,-69 281.64,-69 319.92,-69 319.92,-69 325.92,-69 331.92,-75 331.92,-81 331.92,-81 331.92,-93 331.92,-93 331.92,-99 325.92,-105 319.92,-105"/>
+<text xml:space="preserve" text-anchor="middle" x="300.78" y="-83.1" font-family="PT Sans" font-size="12.00">COMMIT</text>
+</g>
+<g id="edge10" class="edge">
+<title>constraints&#45;&gt;commit</title>
+<path fill="none" stroke="#375a64" d="M253.42,-159.22C263.52,-144.04 275.33,-126.27 284.63,-112.29"/>
+<polygon fill="#375a64" stroke="#375a64" points="286.57,-113.79 288.41,-106.61 282.49,-111.08 286.57,-113.79"/>
+<text xml:space="preserve" text-anchor="middle" x="284.09" y="-124.8" font-family="PT Sans" font-size="11.00">да</text>
+</g>
+<g id="node12" class="node">
+<title>done</title>
+<path fill="#dff3f0" stroke="#375a64" d="M338.67,-36C338.67,-36 262.89,-36 262.89,-36 256.89,-36 250.89,-30 250.89,-24 250.89,-24 250.89,-12 250.89,-12 250.89,-6 256.89,0 262.89,0 262.89,0 338.67,0 338.67,0 344.67,0 350.67,-6 350.67,-12 350.67,-12 350.67,-24 350.67,-24 350.67,-30 344.67,-36 338.67,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="300.78" y="-14.1" font-family="PT Sans" font-size="12.00">Запись создана</text>
+</g>
+<g id="edge11" class="edge">
+<title>commit&#45;&gt;done</title>
+<path fill="none" stroke="#375a64" d="M300.78,-68.75C300.78,-61.46 300.78,-52.81 300.78,-44.79"/>
+<polygon fill="#375a64" stroke="#375a64" points="303.23,-44.94 300.78,-37.94 298.33,-44.94 303.23,-44.94"/>
+</g>
+</g>
+</svg>
